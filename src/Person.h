@@ -1,5 +1,5 @@
 //
-// Created by jeremy solis on 04-oct.-20.
+// Created by Karina Hernandez on 04-oct.-20.
 //
 
 #ifndef LAB07_FILES_SERIALIZATION_KARINAHERNANDEZSANCHEZ_PERSON_H
