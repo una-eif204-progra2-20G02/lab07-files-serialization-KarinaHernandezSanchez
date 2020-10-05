@@ -1,0 +1,17 @@
+//
+// Created by jeremy solis on 04-oct.-20.
+//
+
+#ifndef LAB07_FILES_SERIALIZATION_KARINAHERNANDEZSANCHEZ_PERSON_H
+#define LAB07_FILES_SERIALIZATION_KARINAHERNANDEZSANCHEZ_PERSON_H
+
+
+class Person {
+private:
+    int id;
+    int age;
+    string name;
+};
+
+
+#endif //LAB07_FILES_SERIALIZATION_KARINAHERNANDEZSANCHEZ_PERSON_H
