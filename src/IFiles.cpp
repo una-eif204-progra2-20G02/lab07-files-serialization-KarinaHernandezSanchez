@@ -1,5 +1,9 @@
 //
-// Created by jeremy solis on 05-oct.-20.
+// Created by Karina Hernandez on 05-oct.-20.
 //
 
 #include "IFiles.h"
+
+IFiles::~IFiles() {
+
+}
