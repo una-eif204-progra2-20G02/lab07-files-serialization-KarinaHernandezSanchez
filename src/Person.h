@@ -9,6 +9,7 @@
 
 class Person {
 public:
+    Person();
     Person(int id, int age, std::string name);
     const std::string &getName() const;
     void setName(const std::string &name);

@@ -23,8 +23,6 @@ class IFiles {
 public:
     virtual void save(PersonManager)=0;
     virtual void load(PersonManager)=0;
-    virtual void write()=0;
-    virtual void read()=0;
     virtual ~IFiles();
 
 };

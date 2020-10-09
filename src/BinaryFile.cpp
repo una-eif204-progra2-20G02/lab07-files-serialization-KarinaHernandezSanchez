@@ -32,11 +32,3 @@ void BinaryFile::load(PersonManager personList) {
 
     file.close();
 }
-
-void BinaryFile::read() {
-
-}
-
-void BinaryFile::write() {
-
-}

@@ -4,10 +4,10 @@
 
 #include "FileManager.h"
 
-void FileManager::serialize(IFiles *typeFile) {
-    return typeFile->save();
+void FileManager::serialize(IFiles *typeFile, PersonManager personList) {
+    return typeFile->save(personList);
 }
 
-void FileManager::deserialize(IFiles *typeFile) {
-    return typeFile->load();
+void FileManager::deserialize(IFiles *typeFile, PersonManager personList) {
+    return typeFile->load(personList);
 }

@@ -8,11 +8,8 @@
 #include "IFiles.h"
 
 class BinaryFile :public IFiles{
-    BinaryFile();
     void save(PersonManager)override;
     void load(PersonManager)override;
-    void read()override;
-    void write()override;
 };
 
 

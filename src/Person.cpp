@@ -33,3 +33,7 @@ void Person::setName(const std::string &name) {
 std::string Person::toString() {
     return "Name: " + getName() + "ID: " + getId() + "Age: " + getAge();
 }
+
+Person::Person() {
+
+}

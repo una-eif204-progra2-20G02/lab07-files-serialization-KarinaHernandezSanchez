@@ -11,6 +11,9 @@
 class PersonManager {
 public:
     PersonManager();
+
+    PersonManager(std::vector<Person> vector);
+
     void addPerson(Person);
     Person getPerson(int);
     void erasePerson();

@@ -29,3 +29,7 @@ Person PersonManager::getPerson(int pos) {
 int PersonManager::size() {
     return personList.size();
 }
+
+PersonManager::PersonManager(std::vector<Person> vector) {
+
+}
