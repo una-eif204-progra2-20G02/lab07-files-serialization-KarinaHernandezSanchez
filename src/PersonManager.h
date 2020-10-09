@@ -9,10 +9,12 @@
 #include <vector>
 
 class PersonManager {
+public:
     PersonManager();
     void addPerson(Person);
     Person getPerson(int);
     void erasePerson();
+    int size();
     std::string toString();
 private:
     std::vector<Person> personList;

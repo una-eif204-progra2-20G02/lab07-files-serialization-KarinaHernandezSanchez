@@ -22,6 +22,10 @@ std::string PersonManager::toString() {
     }
 }
 
-Person PersonManager::getPerson(int) {
-    return Person(0, 0, __cxx11::basic_string());
+Person PersonManager::getPerson(int pos) {
+    return personList[pos];
+}
+
+int PersonManager::size() {
+    return personList.size();
 }

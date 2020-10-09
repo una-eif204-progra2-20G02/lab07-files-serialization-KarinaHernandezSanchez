@@ -5,9 +5,13 @@
 #ifndef LAB07_FILES_SERIALIZATION_KARINAHERNANDEZSANCHEZ_XMLFILE_H
 #define LAB07_FILES_SERIALIZATION_KARINAHERNANDEZSANCHEZ_XMLFILE_H
 
-
-class XMLFile {
-
+#include "IFiles.h"
+class XMLFile :public IFiles{
+public:
+    void save(PersonManager)override;
+    void load(PersonManager)override;
+    void write();
+    void read();
 };
 
 

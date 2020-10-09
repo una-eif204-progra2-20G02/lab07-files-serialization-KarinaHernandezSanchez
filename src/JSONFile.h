@@ -5,9 +5,13 @@
 #ifndef LAB07_FILES_SERIALIZATION_KARINAHERNANDEZSANCHEZ_JSONFILE_H
 #define LAB07_FILES_SERIALIZATION_KARINAHERNANDEZSANCHEZ_JSONFILE_H
 
-
-class JSONFile {
-
+#include "IFiles.h"
+class JSONFile : public IFiles {
+public:
+    void save(PersonManager)override;
+    void load(PersonManager)override;
+    void write()override;
+    void read()override;
 };
 
 
