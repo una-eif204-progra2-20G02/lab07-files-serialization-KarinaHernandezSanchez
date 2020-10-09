@@ -12,10 +12,8 @@
 #include <string.h>
 #include <vector>
 #include <sstream>
-#include "XMLSerialization.h"
 
 using json = nlohmann::json;
-using namespace xmls;
 using namespace std;
 
 class IFiles {

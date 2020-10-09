@@ -8,6 +8,7 @@
 #include "IFiles.h"
 
 class FileManager {
+public:
     void serialize(IFiles*, PersonManager);
     void deserialize(IFiles*, PersonManager);
 };

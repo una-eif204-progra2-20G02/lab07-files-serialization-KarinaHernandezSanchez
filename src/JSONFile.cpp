@@ -22,16 +22,6 @@ void JSONFile::save(PersonManager personList) {
     file.close();
 }
 
-void JSONFile::load(PersonManager personList) {
-    ifstream file;
-    json vector;
-    try { file.open("TextFile.json", ios::binary); }
-    catch (ifstream::failure a) { exit(1);}
-
-    file>>vector;
-    personList = convertToObject(vector);
-}
-
 json JSONFile::serializeObject(PersonManager personList, int pos) {
     json jsonPerson;
     Person person1 = personList.getPerson(pos);
@@ -42,16 +32,6 @@ json JSONFile::serializeObject(PersonManager personList, int pos) {
     return jsonPerson;
 }
 
-vector<Person> JSONFile::convertToObject(const json &array) {
-    vector<Person> arrayAuxPerson;
-    vector<json> arrayAuxJson = array;
-    Person personAux;
-    for(auto & i : arrayAuxJson){
-        personAux = deserializeObject(i);
-        arrayAuxPerson.push_back(personAux);
-    }
-    return arrayAuxPerson;
-}
 
 Person JSONFile::deserializeObject(json array) {
     Person person1;

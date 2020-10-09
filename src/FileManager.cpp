@@ -5,9 +5,9 @@
 #include "FileManager.h"
 
 void FileManager::serialize(IFiles *typeFile, PersonManager personList) {
-    return typeFile->save(personList);
+    typeFile->save(personList);
 }
 
 void FileManager::deserialize(IFiles *typeFile, PersonManager personList) {
-    return typeFile->load(personList);
+    typeFile->load(personList);
 }

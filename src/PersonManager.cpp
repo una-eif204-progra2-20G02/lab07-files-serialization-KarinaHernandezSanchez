@@ -17,9 +17,11 @@ void PersonManager::erasePerson() {
 }
 
 std::string PersonManager::toString() {
+    stringstream list;
     for(int i = 0; i< personList.size() ;i++) {
-        return personList[i].toString();
+        list<<personList[i].toString();
     }
+    return list.str();
 }
 
 Person PersonManager::getPerson(int pos) {

@@ -9,10 +9,8 @@
 class JSONFile : public IFiles {
 public:
     void save(PersonManager)override;
-    void load(PersonManager)override;
     json serializeObject(PersonManager,int);
     Person deserializeObject(json);
-    vector<Person> convertToObject(const json&);
 
 };
 

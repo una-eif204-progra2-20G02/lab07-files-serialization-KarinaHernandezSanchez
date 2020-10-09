@@ -31,9 +31,15 @@ void Person::setName(const std::string &name) {
 }
 
 std::string Person::toString() {
-    return "Name: " + getName() + "ID: " + getId() + "Age: " + getAge();
+    stringstream person;
+    person<<"Name: "<<getName()<<"ID: "<<getId()<<"Age: "<<getAge();
+    return person.str();
 }
 
 Person::Person() {
+
+}
+
+Person::~Person() {
 
 }

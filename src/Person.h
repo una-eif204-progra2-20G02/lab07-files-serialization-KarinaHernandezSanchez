@@ -6,6 +6,11 @@
 #define LAB07_FILES_SERIALIZATION_KARINAHERNANDEZSANCHEZ_PERSON_H
 
 #include <ostream>
+#include <iostream>
+#include <sstream>
+#include <string>
+
+using namespace std;
 
 class Person {
 public:
@@ -18,6 +23,7 @@ public:
     int getAge() const;
     void setAge(int age);
     std::string toString();
+    ~Person();
 
 private:
     int id;
